@@ -1,0 +1,12 @@
+[submodule "libraries/RFM69"]
+	path = libraries/RFM69
+	url = https://github.com/LowPowerLab/RFM69
+[submodule "Arduino-Makefile"]
+	path = Arduino-Makefile
+	url = https://github.com/sudar/Arduino-Makefile
+[submodule "libraries/SPIFlash"]
+	path = libraries/SPIFlash
+	url = https://github.com/LowPowerLab/SPIFlash
+[submodule "libraries/EEPROMex"]
+	path = libraries/EEPROMex
+	url = https://github.com/thijse/Arduino-EEPROMEx.git
