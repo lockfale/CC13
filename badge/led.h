@@ -15,6 +15,7 @@ void radiate2Pattern();
 void marchPattern();
 void negmarchPattern();
 void stackdotsPattern();
+void sparklePattern();
 
 
 } /* namespace LED */
