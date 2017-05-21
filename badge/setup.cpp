@@ -191,6 +191,14 @@ bool SetupSerialUI() {
     return false;
   }
 
+  if ( ! submen2->addCommand(
+         SUI_STR("sparkle"),
+         LED::sparklePattern,
+         SUI_STR("We are getting fabulous"))) {
+    MySUI.returnError(CouldntAddItemErr);
+    return false;
+  }
+
   /* *** Main -> Radio *** */
 
   if ( ! submen3->addCommand(
@@ -204,5 +212,3 @@ bool SetupSerialUI() {
   return true;
 
 }
-
-
