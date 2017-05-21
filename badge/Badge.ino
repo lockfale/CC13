@@ -26,21 +26,9 @@ void setup()
 
 void loop()
 {
-  /* We checkForUser() periodically, to see
-  ** if anyone is attempting to send us some
-  ** data through SerialUI.
-
-  ** Called without parameters, or with 0, checkForUser
-  ** won't delay the program, as it won't block at all.
-  ** Using a parameter > 0:
-  **    checkForUser(MAX_MS);
-  ** will wait for up to MAX_MS milliseconds for a user,
-  ** so is equivalent to having a delay(MAX_MS) in the loop,
-  ** when no user is present.
-  */
   if (MySUI.checkForUser(heartbeat_function_period_ms)) {
 
-    /* Now we keep handling the serial user's
+    /* Keep handling the serial user's
     ** requests until they exit or timeout.
     */
     while (MySUI.userPresent()) {

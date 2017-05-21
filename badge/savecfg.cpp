@@ -50,7 +50,7 @@ void initiateCfg()
     DEBUG_PRINT("[+] Seed:");
     DEBUG_PRINTLN(seed);
     randomSeed(seed);
-    r = random(250);
+    r = random(3,250);
     DEBUG_PRINT("[+] r:");
     DEBUG_PRINTLN(r);
     cfgUpdateNodeID(r);
@@ -62,7 +62,7 @@ void initiateCfg()
     DEBUG_PRINT("[+] Seed:");
     DEBUG_PRINTLN(seed);
     randomSeed(seed);
-    r = random(999999);
+    r = random(3,999999);
     DEBUG_PRINT("[+] r:");
     DEBUG_PRINTLN(r);
     cfgUpdateNodeTag(r);

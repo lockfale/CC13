@@ -10,3 +10,6 @@
 [submodule "libraries/EEPROMex"]
 	path = libraries/EEPROMex
 	url = https://github.com/thijse/Arduino-EEPROMEx.git
+[submodule "libraries/SerialUI"]
+	path = libraries/SerialUI
+	url = https://github.com/psychogenic/SerialUI

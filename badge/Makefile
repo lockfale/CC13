@@ -2,7 +2,7 @@
 
 ### PROJECT_DIR
 ### This is the path to where you have created/cloned your project
-PROJECT_DIR = $(HOME)/CarolinaCon13
+PROJECT_DIR = $(HOME)/CC13
 
 ### AVR_GCC_VERSION
 ### Check if the version is equal or higher than 4.9
