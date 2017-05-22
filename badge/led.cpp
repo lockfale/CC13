@@ -49,7 +49,7 @@ const byte sparkle[] PROGMEM = {
   B00000001, B10000000, B00000010, B01000000, B00000100,
   B00100000, B00001000, B00010000
 };
-const int patternTimes[] = {500, 500, 500, 500, 500, 500, 500, 100};
+const int patternTimes[] = {20, 30, 50, 40, 20, 30, 20, 5};
 const int patternLengths[] = {2, 4, 6, 7, 15, 18, 37, 8};
 
 unsigned int patternTime;
@@ -69,29 +69,27 @@ void initiateLED()
 
 void changePattern(byte tmpPattern)
 {
-  if (tmpPattern < 8) {
-    if (tmpPattern != currPattern) {
-      currPattern = tmpPattern;
-      patternLength = patternLengths[currPattern];
-      patternTime = patternTimes[currPattern];
-      patternState = 0;
-      if (currPattern == 0) {
-        memcpy_P( PatternBuf, flash, patternLength );
-      } else if (currPattern == 1) {
-        memcpy_P( PatternBuf, bullet, patternLength );
-      } else if (currPattern == 2) {
-        memcpy_P( PatternBuf, radiate, patternLength );
-      } else if (currPattern == 3) {
-        memcpy_P( PatternBuf, radiate2, patternLength );
-      } else if (currPattern == 4) {
-        memcpy_P( PatternBuf, march, patternLength );
-      } else if (currPattern == 5) {
-        memcpy_P( PatternBuf, negmarch, patternLength );
-      } else if (currPattern == 6) {
-        memcpy_P( PatternBuf, stackdots, patternLength );
-      } else if (currPattern == 7) {
-        memcpy_P( PatternBuf, sparkle, patternLength );
-      }
+  if (tmpPattern != currPattern) {
+    currPattern = tmpPattern;
+    patternLength = patternLengths[currPattern];
+    patternTime = patternTimes[currPattern];
+    patternState = 0;
+    if (currPattern == 0) {
+      memcpy_P( PatternBuf, flash, patternLength );
+    } else if (currPattern == 1) {
+      memcpy_P( PatternBuf, bullet, patternLength );
+    } else if (currPattern == 2) {
+      memcpy_P( PatternBuf, radiate, patternLength );
+    } else if (currPattern == 3) {
+      memcpy_P( PatternBuf, radiate2, patternLength );
+    } else if (currPattern == 4) {
+      memcpy_P( PatternBuf, march, patternLength );
+    } else if (currPattern == 5) {
+      memcpy_P( PatternBuf, negmarch, patternLength );
+    } else if (currPattern == 6) {
+      memcpy_P( PatternBuf, stackdots, patternLength );
+    } else if (currPattern == 7) {
+      memcpy_P( PatternBuf, sparkle, patternLength );
     }
   }
 }
