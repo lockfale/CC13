@@ -49,8 +49,8 @@ const byte sparkle[] PROGMEM = {
   B00000001, B10000000, B00000010, B01000000, B00000100,
   B00100000, B00001000, B00010000
 };
-const int patternTimes[] = {500, 500, 500, 500, 500, 500, 500};
-const int patternLengths[] = {2, 4, 6, 7, 15, 18, 37};
+const int patternTimes[] = {500, 500, 500, 500, 500, 500, 500, 100};
+const int patternLengths[] = {2, 4, 6, 7, 15, 18, 37, 8};
 
 unsigned int patternTime;
 unsigned long previousPatternMillis = 0;
@@ -69,7 +69,7 @@ void initiateLED()
 
 void changePattern(byte tmpPattern)
 {
-  if (tmpPattern < 7) {
+  if (tmpPattern < 8) {
     if (tmpPattern != currPattern) {
       currPattern = tmpPattern;
       patternLength = patternLengths[currPattern];
