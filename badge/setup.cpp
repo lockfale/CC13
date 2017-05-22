@@ -160,9 +160,9 @@ bool SetupSerialUI() {
   }
 
   if ( ! submen2->addCommand(
-         SUI_STR("radiate2"),
-         LED::radiate2Pattern,
-         SUI_STR("Inverse radiating from the center"))) {
+         SUI_STR("negradiate"),
+         LED::negradiatePattern,
+         SUI_STR("Backwards radiate"))) {
     MySUI.returnError(CouldntAddItemErr);
     return false;
   }

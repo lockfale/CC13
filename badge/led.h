@@ -11,7 +11,7 @@ void changeLED(unsigned long currMill);
 void flashPattern();
 void bulletPattern();
 void radiatePattern();
-void radiate2Pattern();
+void negradiatePattern();
 void marchPattern();
 void negmarchPattern();
 void stackdotsPattern();

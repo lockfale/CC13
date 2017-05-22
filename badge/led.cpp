@@ -20,9 +20,9 @@ const byte radiate[] PROGMEM = {
   B00011000, B00100100, B01000010, B10000001, B00000000,
   B00000000
 };
-const byte radiate2[] PROGMEM = {
-  B00000000, B00011000, B00111100, B01111110, B11111111,
-  B11111111, B11111111
+const byte negradiate[] PROGMEM = {
+  B10000001, B01000010, B00100100, B00011000, B00000000,
+  B00000000
 };
 const byte march[] PROGMEM = {
   B00000001, B00000010, B00000100, B00001000, B00010000,
@@ -50,7 +50,7 @@ const byte sparkle[] PROGMEM = {
   B00100000, B00001000, B00010000
 };
 const int patternTimes[] = {20, 30, 50, 40, 20, 30, 20, 5};
-const int patternLengths[] = {2, 4, 6, 7, 15, 18, 37, 8};
+const int patternLengths[] = {2, 4, 6, 6, 15, 18, 37, 8};
 
 unsigned int patternTime;
 unsigned long previousPatternMillis = 0;
@@ -81,7 +81,7 @@ void changePattern(byte tmpPattern)
     } else if (currPattern == 2) {
       memcpy_P( PatternBuf, radiate, patternLength );
     } else if (currPattern == 3) {
-      memcpy_P( PatternBuf, radiate2, patternLength );
+      memcpy_P( PatternBuf, negradiate, patternLength );
     } else if (currPattern == 4) {
       memcpy_P( PatternBuf, march, patternLength );
     } else if (currPattern == 5) {
@@ -130,7 +130,7 @@ void radiatePattern()
   cfgUpdatePatternID(x);
 }
 
-void radiate2Pattern()
+void negradiatePattern()
 {
   byte x = 3;
   changePattern(x);
