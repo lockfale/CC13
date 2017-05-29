@@ -1,0 +1,14 @@
+1x IC 8-BIT SHIFT REGISTER 16-DIP 	- SN74HC595N 		- DIGIKEY PART NUMBER 296-1600-5-ND 
+1x CONN IC DIP SOCKET 28POS TIN   	- ED281DT	 		- DIGIKEY PART NUMBER ED3050-5-ND
+1x IC MCU 8BIT 32KB FLASH 28DIP		- ATMEGA328P-PU   	- DIGIKEY PART NUMBER ATMEGA328P-PU-ND
+4x CAP CER 0.1UF 50V Y5V RADIAL		- K104Z15Y5VF5TL2 	- DIGIKEY PART NUMBER BC1160CT-ND 
+1x CER RES 16.0000MHZ 30PF 			- ZTT-16.00MX		- X908-ND 
+1x LED BAR GRAPH 10-SEGMENT RED		- LTA-1000HR		- 160-1066-ND 
+1x RES 10K OHM 1/6W 5% AXIAL		- CFR-12JB-52-10K	- 10KEBK-ND
+8x RES 220 OHM 1/4W 5% AXIAL		- CF14JT220R		- CF14JT220RCT-ND 
+1x IC REG LDO 3.3V 0.25A TO92-3		- MCP1702-3302E/TO 	- MCP1702-3302E/TO-ND 
+1x CAP ALUM 10UF 20% 16V RADIAL		- ECE-A1CKS100		- P966-ND
+1x tranciever http://www.anarduino.com/details.jsp?pid=146
+PCB edge mount female SMA connector, no part number, check amazon or ebay.
+any 3 cell AAA or AA battery holder should work, find one with wire leads to ensure compatability.
+any 8 pin .1" spacing male or female header for the FTDI connector. 
